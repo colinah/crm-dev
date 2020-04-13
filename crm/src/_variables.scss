@@ -1,2 +1,9 @@
-$color-primary: #4072a0;
-$color-primary-light: #7caad6;
+$color: (
+    primary: #4072a0,
+    primary-light: #7caad6,
+    text-light: #7caad6,
+    text-main: #4072a0,
+    text-dark: #2a557e,
+    background-grey: #dfdfdf,
+    background-light: #ffffff
+)

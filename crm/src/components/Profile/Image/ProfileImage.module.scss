@@ -1,0 +1,15 @@
+@import '../../../variables';
+
+.Container {
+    width: 100%;
+    background-color: map-get($map: $color, $key: primary);
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+}
+
+.Image{
+    border-radius: 50%;
+    width: 100%;
+    height:100%;
+}

@@ -1,0 +1,25 @@
+@import "../../../variables";
+
+.UserContainer {
+    border: 2px solid map-get($map: $color, $key: border);
+    border-top: none;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.ImageContainer {
+    height: 40%;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.NameContainer {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Name {
+    color: map-get($map: $color, $key: primary);
+    font-size: 22px;
+    text-align: center;
+}

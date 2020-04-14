@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './containers/Banner/Banner';
+import Profile from './components/Profile/Profile';
 import classes from './App.module.scss';
 
 
@@ -11,9 +12,9 @@ function App() {
       </div>
       <div className={classes.PageContainer}>
         <div className={classes.ProfileContainer}>
-          <div>Profile info</div>
+          <Profile />
         </div>
-        <div className={classes.ContentContainer}>
+        <div className={classes.ContentContainer} style={{padding: '20px'}}>
           <div>Page Content</div>
         </div>
         <div className={classes.SideBarContainer}>

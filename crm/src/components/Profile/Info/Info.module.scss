@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+.InfoContainer {
+ border: 1px solid map-get($map: $color, $key: border);
+ border-top: none;
+ padding: 20px;
+}
+
+.InfoTitle {
+    font-size: 18px;
+    color: map-get($map: $color, $key: text-dark);
+}
+
+.InfoGroup {
+    padding: 14px;
+    padding-left: 0;
+ 
+}
+
+.InfoContentTitle {
+    font-size: 16px;
+    color: map-get($map: $color, $key: text-light )
+
+}
+
+.InfoContent {
+    font-size: 14px;
+    color: map-get($map: $color, $key: text-main )
+}

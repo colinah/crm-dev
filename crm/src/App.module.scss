@@ -12,19 +12,16 @@
 }
 
 .ProfileContainer {
-    height: 1000px;
     flex: 1;
     background-color: map-get($map: $color, $key: background-light);
 }
 
 .ContentContainer {
-    height: 1000px;
     flex: 2;
     background-color: map-get($map: $color, $key: background-grey);
 }
 
 .SideBarContainer {
-    height: 1000px;
     flex: 1;
     background-color: map-get($map: $color, $key: background-light);
 }

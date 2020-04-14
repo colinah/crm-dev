@@ -1,7 +1,7 @@
 @import '../../../variables';
 
 .InfoContainer {
- border: 1px solid map-get($map: $color, $key: border);
+ border: 2px solid map-get($map: $color, $key: border);
  border-top: none;
  padding: 20px;
 }

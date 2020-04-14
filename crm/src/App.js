@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './containers/Banner/Banner';
 import Profile from './components/Profile/Profile';
+import Content from './containers/Content/Content';
 import classes from './App.module.scss';
 
 
@@ -15,7 +16,7 @@ function App() {
           <Profile />
         </div>
         <div className={classes.ContentContainer} style={{padding: '20px'}}>
-          <div>Page Content</div>
+          <Content />
         </div>
         <div className={classes.SideBarContainer}>
           <div>Side Bar</div>

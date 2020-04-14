@@ -1,0 +1,31 @@
+@import '../../../variables';
+
+.ContentNavContainer {
+    display: block;
+    width: 100%;
+    background-color: map-get($map:$color , $key: background-light);
+    box-sizing: border-box;
+    
+}
+
+.NavItemContainer {
+    display: inline-block;
+    padding: 20px;
+
+    color: map-get($map: $color, $key: primary);
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.NavItemContainerActive {
+    color:red
+}
+.NavItemContainer:hover {
+    border-bottom: 3px solid map-get($map: $color, $key: primary);
+}
+
+.NavLink{
+    color: inherit;
+    text-decoration: inherit;
+}
+

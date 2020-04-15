@@ -1,21 +1,32 @@
-import React from 'react';
+import React , { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import classes from './ContentNav.module.scss';
 
-const contentNav = () => {
- return (
-     <div className={classes.ContentNavContainer}>
-         <div className={classes.NavItemContainer}>
-             <div><NavLink aciveClassName={classes.NavItemContainerActive} to="/activity" className={classes.NavLink}>Acitvity</NavLink></div>
-         </div>
-         <div className={classes.NavItemContainer}>
-            <div><NavLink aciveClassName={classes.NavItemContainerActive} to="/agreements" className={classes.NavLink}>Quotes & Contracts</NavLink></div>
-         </div>
-         <div className={classes.NavItemContainer}>
-            <div><NavLink aciveClassName={classes.NavItemContainerActive} to="/bills" className={classes.NavLink}>Bills</NavLink></div>
-         </div>
-     </div>
- )
+class ContentNav extends Component {
+    render(){
+        return (
+            <div className={classes.ContentNavContainer}>
+                    <NavLink  
+                        to="/activity"
+                        activeClassName={classes.ActiveLink}
+                        className={classes.NavItem}
+                        >Acitvity
+                    </NavLink>
+                    <NavLink  
+                        to="/agreements"
+                        activeClassName={classes.ActiveLink}
+                        className={classes.NavItem}
+                        >Quotes & Contracts
+                    </NavLink>
+                    <NavLink  
+                        to="/bills"
+                        activeClassName={classes.ActiveLink}
+                        className={classes.NavItem}
+                        >Bills
+                    </NavLink>
+            </div>
+        )
+    }
 }
 
-export default contentNav;
+export default ContentNav;

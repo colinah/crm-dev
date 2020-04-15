@@ -4,28 +4,30 @@
     display: block;
     width: 100%;
     background-color: map-get($map:$color , $key: background-light);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     
 }
 
-.NavItemContainer {
+.NavItem {
     display: inline-block;
     padding: 20px;
-
     color: map-get($map: $color, $key: primary);
     font-weight: bold;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-.NavItemContainerActive {
-    color:red
-}
-.NavItemContainer:hover {
+.NavItem:hover {
     border-bottom: 3px solid map-get($map: $color, $key: primary);
 }
 
-.NavLink{
-    color: inherit;
-    text-decoration: inherit;
+.NavItem:active {
+    color: map-get($map: $color, $key: primary-light)
+}
+
+.ActiveLink {
+    border-bottom: 3px solid map-get($map: $color, $key: primary);
 }
 

@@ -11,7 +11,7 @@ const content = () => {
         <div className={classes.ContentContainer}>
             <ContentNav />
             <Switch>
-                <Route path="/activity" component={ Activity } />
+                <Route path="/activity" component ={ Activity } />
                 <Route path="/agreements" component = { Agreements } />
                 <Route path="/bills" component = { Bills } />
                 <Route path="/" component={ Activity } />
@@ -19,7 +19,6 @@ const content = () => {
             </Switch>
         </div>
     )
-
 }
 
 export default content;

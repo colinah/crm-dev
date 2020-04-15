@@ -1,0 +1,42 @@
+@import '../../../../variables';
+
+.PostContainer {
+    width: 100%;
+    background-color: map-get($map: $color, $key: background-light );
+    margin-top: 30px;
+    display: block;
+}
+
+.PostHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.postType {
+    flex: 1;
+    color: map-get($map: $color, $key:text-main);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.postDate {
+    flex: 1;
+    text-align: right;
+    color: map-get($map: $color, $key:text-main);
+    font-size: 12px;
+}
+
+.PostTitle {
+    color: map-get($map: $color, $key:text-dark);
+    font-size: 22px;
+    padding-left: 40px;
+}
+
+.PostLink {
+    color: map-get($map: $color, $key:text-main);
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 16px
+}
